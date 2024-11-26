@@ -7,58 +7,89 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <header>
-        <nav>
-            <a href="index.html">Hjem</a>
-            <a href="#produkter">Produkter</a>
-            <a href="#kategorier">Kategorier</a>
-            <a href="#kontakt">Kontakt oss</a>
-            <a href="checkout.html"><img src="checkoutzl.jpg" alt="Handlekurv"></a>
+        <nav role="navigation">
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="product.html">Produkter</a></li>
+                <li><a href="#kategorier">Kategorier</a></li>
+                <li><a href="#kontakt">Kontakt oss</a></li>
+                <li><a href="checkout.html">
+                    <img src="https://picsum.photos/50/50" alt="Handlekurvikon">
+                </a></li>
+            </ul>
         </nav>
     </header>
 
+    
     <main>
+        
+        <section id="banner">
+            <h1>Velkommen til vår nettbutikk!</h1>
+            <p>Finn alt du trenger for fotballopplevelsen din.</p>
+        </section>
+        
+        
         <section id="produkter">
             <h2>Våre mest populære produkter</h2>
-            <div class="product-card">
-                <img src="image/nike fotballskop16.png" alt="Nike fotballsko" width="300">
-                <h3>Nike Fotballsko</h3>
-                <p>Pris: 2299 kr</p>
-            </div>
-        
-            <div class="product-card">
-                <img src="image/forside fotballbut.jpg" alt="Forside bilde av fotballbutikk" width="300">
-                <h3>Fotballutstyr</h3>
-                <p>Pris: 1499 kr</p>
-            </div>
-        
-            <div class="product-card">
-                <img src="image/checkoutzl.jpg" alt="Bilde for checkout" width="300">
-                <h3>Kassen</h3>
-                <p>Pris: 999 kr</p>
+
+            <div class="product-grid">
+                <!-- Produkt 1 -->
+                <article class="product-card">
+                    <img src="https://picsum.photos/200/300" alt="Nike fotballsko, høy kvalitet" width="300">
+                    <h3>Nike Fotballsko</h3>
+                    <p>Pris: 2299 kr</p>
+                    <a href="checkout.html" class="btn">Kjøp nå</a>
+                </article>
+
+                <!-- Produkt 2 -->
+                <article class="product-card">
+                    <img src="https://picsum.photos/200/300" alt="Adidas fotballsko">
+                    <h3>Adidas Fotballsko</h3>
+                    <p>Pris: 1999 kr</p>
+                    <a href="checkout.html" class="btn">Kjøp nå</a>
+                </article>
+
+                <!-- Produkt 3 -->
+                <article class="product-card">
+                    <img src="https://picsum.photos/200/300" alt="Puma fotballsko">
+                    <h3>Puma Fotballsko</h3>
+                    <p>Pris: 1899 kr</p>
+                    <a href="checkout.html" class="btn">Kjøp nå</a>
+                </article>
+
+                <!-- Produkt 4 -->
+                <article class="product-card">
+                    <img src="https://picsum.photos/200/300" alt="Umbro fotballsko">
+                    <h3>Umbro Fotballsko</h3>
+                    <p>Pris: 1599 kr</p>
+                    <a href="checkout.html" class="btn">Kjøp nå</a>
+                </article>
             </div>
         </section>
         
-
+        <!-- Kontaktseksjonen -->
+        <section id="kontakt">
+            <h2>Kontakt oss</h2>
+            <form>
+                <label for="navn">Navn:</label>
+                <input type="text" id="navn" name="navn" required>
         
+                <label for="epost">E-post:</label>
+                <input type="email" id="epost" name="epost" required>
+        
+                <label for="melding">Melding:</label>
+                <textarea id="melding" name="melding" rows="5" required></textarea>
+        
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <div>
-            <p>Logo og ingress</p>
-        </div>
-        <div>
-            <h3>Kontakt oss</h3>
-            <p>Adresse: Eksempelgaten 1, 1234 Oslo</p>
-        </div>
-        <div>
-            <h3>Snarveier</h3>
-            <a href="#banner">Hjem</a>
-        </div>
-        <div>
-            <h3>Følg oss</h3>
-            <a href="https://www.instagram.com">Instagram</a>
-        </div>
+        <p>© 2024 Nettbutikk. Alle rettigheter reservert.</p>
     </footer>
 </body>
 </html>
