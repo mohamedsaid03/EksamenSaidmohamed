@@ -9,24 +9,24 @@
 <body>
     <!-- Header -->
     <header>
-        <nav class="header-nav" aria-label="Hovedmeny">
+        <nav class="header-nav">
             <ul class="menu">
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="product.html">Produkter</a></li>
                 <li><a href="#kategorier">Kategorier</a></li>
                 <li><a href="#kontakt">Kontakt oss</a></li>
             </ul>
-            <a href="index.html" class="logo" aria-label="Logo">Logo</a>
+            <a href="index.html" class="logo">Logo</a>
             <div class="cart-container">
-                <a href="checkout.html" class="cart-icon" aria-label="Handlekurv">
+                <a href="checkout.html" class="cart-icon">
                     <img src="https://picsum.photos/40/40" alt="Handlekurvikon">
                     <span class="cart-count">3</span>
                 </a>
             </div>
         </nav>
         <div class="search-container">
-            <input type="text" placeholder="Søk etter produkter..." class="search-input" aria-label="Søkefelt">
-            <button type="submit" class="search-btn" aria-label="Søk">Søk</button>
+            <input type="text" placeholder="Søk etter produkter..." class="search-input">
+            <button type="submit" class="search-btn">Søk</button>
         </div>
     </header>
 
@@ -34,17 +34,10 @@
     <main id="main-content">
         <!-- Banner Section -->
         <section id="banner" class="banner">
-            <div class="slider">
-                <div class="slide">
-                    <h1>Velkommen til vår nettbutikk!</h1>
-                    <p>Finn alt du trenger for fotballopplevelsen din.</p>
-                    <a href="#produkter" class="btn">Utforsk Produkter</a>
-                </div>
-                <div class="slide">
-                    <h1>Eksklusive tilbud!</h1>
-                    <p>Utforsk våre kampanjer i dag.</p>
-                    <a href="#kategorier" class="btn">Se mer</a>
-                </div>
+            <div class="banner-content">
+                <h1>Velkommen til vår nettbutikk!</h1>
+                <p>Finn alt du trenger for fotballopplevelsen din.</p>
+                <a href="#produkter" class="btn">Utforsk Produkter</a>
             </div>
         </section>
 
@@ -87,26 +80,47 @@
         <section id="kategorier" class="category-section">
             <h2>Våre mest populære kategorier</h2>
             <div class="category-grid">
-                <article class="category-card">
+                <article class="category-card" style="background-image: url('https://picsum.photos/300/200');">
                     <h3>Fotballsko</h3>
                 </article>
-                <article class="category-card">
+                <article class="category-card" style="background-image: url('https://picsum.photos/300/200');">
                     <h3>Keeperutstyr</h3>
                 </article>
-                <article class="category-card">
+                <article class="category-card" style="background-image: url('https://picsum.photos/300/200');">
                     <h3>Treningsklær</h3>
                 </article>
-                <article class="category-card">
+                <article class="category-card" style="background-image: url('https://picsum.photos/300/200');">
                     <h3>Tilbehør</h3>
                 </article>
             </div>
         </section>
-       
+
+        <!-- Anmeldelser -->
+        <section id="anmeldelser" class="review-section">
+            <h2>Hva våre kunder sier</h2>
+            <div class="review-grid">
+                <article class="review-card">
+                    <img src="https://picsum.photos/100/100" alt="Kunde">
+                    <h3>Perfekt produkt!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </article>
+                <article class="review-card">
+                    <img src="https://picsum.photos/100/100" alt="Kunde">
+                    <h3>Veldig fornøyd!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </article>
+                <article class="review-card">
+                    <img src="https://picsum.photos/100/100" alt="Kunde">
+                    <h3>Rask levering!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </article>
+            </div>
+        </section>
 
         <!-- Kontaktseksjonen -->
         <section id="kontakt">
             <h2>Kontakt oss</h2>
-            <form aria-label="Kontaktskjema">
+            <form>
                 <label for="navn">Navn:</label>
                 <input type="text" id="navn" name="navn" required>
                 <label for="epost">E-post:</label>
@@ -138,5 +152,4 @@
         </section>
     </footer>
 </body>
-
 </html>
