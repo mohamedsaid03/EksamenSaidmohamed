@@ -7,55 +7,59 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <nav>
             <a href="index.html">Hjem</a>
             <a href="product.html">Produkter</a>
-            <a href="#">Kategorier</a>
-            <a href="#">Kontakt oss</a>
-            <img src="https://picsum.photos/200/300" alt="Handlekurv" class="cart-icon">
+            <a href="#categories">Kategorier</a>
+            <a href="#contact">Kontakt oss</a>
+            <img src="https://picsum.photos/50/50" alt="Handlekurv" class="cart-icon">
         </nav>
     </header>
 
+    <!-- Hovedinnhold -->
     <main>
         <h2>Din handlekurv</h2>
-        <section class="cart-items">
-            <!-- Handlekurv Produkt 1 -->
-            <div class="cart-item">
-                <img src="https://picsum.photos/200/300" alt="Nike Fotballsko">
 
->
+        <!-- Handlekurvseksjon -->
+        <section class="cart-items" aria-label="Handlekurv varer">
+            <!-- Produkt 1 -->
+            <article class="cart-item">
+                <img src="https://picsum.photos/200/300" alt="Nike Fotballsko">
                 <h3>Nike Fotballsko</h3>
                 <p>Antall: 1</p>
                 <p>Pris: 2299 kr</p>
-                <button class="btn remove-btn">Fjern</button>
-            </div>
+                <button class="btn remove-btn" aria-label="Fjern Nike Fotballsko">Fjern</button>
+            </article>
 
-            <!-- Handlekurv Produkt 2 -->
-            <div class="cart-item">
+            <!-- Produkt 2 -->
+            <article class="cart-item">
                 <img src="https://picsum.photos/200/300" alt="Spesial Produkt">
                 <h3>Spesial Produkt</h3>
                 <p>Antall: 2</p>
                 <p>Pris: 1998 kr</p>
-                <button class="btn remove-btn">Fjern</button>
-            </div>
+                <button class="btn remove-btn" aria-label="Fjern Spesial Produkt">Fjern</button>
+            </article>
 
-            <!-- Handlekurv Produkt 3 -->
-            <div class="cart-item">
+            <!-- Produkt 3 -->
+            <article class="cart-item">
                 <img src="https://picsum.photos/200/300" alt="Fotballutstyr">
                 <h3>Fotballutstyr</h3>
                 <p>Antall: 1</p>
                 <p>Pris: 1499 kr</p>
-                <button class="btn remove-btn">Fjern</button>
-            </div>
+                <button class="btn remove-btn" aria-label="Fjern Fotballutstyr">Fjern</button>
+            </article>
         </section>
 
-        <section class="checkout-summary">
+        <!-- Oppsummering -->
+        <section class="checkout-summary" aria-label="Kjøpsoppsummering">
             <h3>Total: 5796 kr</h3>
-            <button class="btn checkout-btn">Fullfør Kjøp</button>
+            <button class="btn checkout-btn" aria-label="Fullfør kjøp">Fullfør Kjøp</button>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>© 2024 Nettbutikk. Alle rettigheter reservert.</p>
     </footer>

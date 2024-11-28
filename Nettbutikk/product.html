@@ -5,84 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produkter - Nettbutikk</title>
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
+    <!-- Header -->
     <header>
         <nav>
-            <a href="index.html">Hjem</a>
-            <a href="product.html">Produkter</a>
-            <a href="checkout.html">checkout</a>
-            <a href="#">Kategorier</a>
-            <a href="#">Kontakt oss</a>
-            <img src="https://picsum.photos/200/300" alt="Handlekurv" class="cart-icon">
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="product.html">Produkter</a></li>
+                <li><a href="checkout.html">Handlekurv</a></li>
+                <li><a href="#categories">Kategorier</a></li>
+                <li><a href="#kontakt">Kontakt oss</a></li>
+                <li><a href="checkout.html">
+                    <img src="https://picsum.photos/50/50" alt="Handlekurvikon" class="cart-icon">
+                </a></li>
+            </ul>
         </nav>
     </header>
 
-    <nav aria-label="Brødsmulesti">
+    <!-- Brødsmulesti -->
+    <nav aria-label="Brødsmulesti" class="breadcrumb-container">
         <ul class="breadcrumb">
             <li><a href="index.html">Hjem</a></li>
             <li><a href="product.html">Produkter</a></li>
+            <li>Produktdetaljer</li>
         </ul>
     </nav>
     
-
+    <!-- Hovedinnhold -->
     <main>
-        <h2>Våre produkter</h2>
-        <section class="product-list">
-            <!-- Produkt 1 -->
-            <div class="product-item">
-                <img src="https://picsum.photos/200/300" alt="Nike Fotballsko">
-                <h3>Nike Fotballsko</h3>
-                <p>Komfortable fotballsko for alle underlag.</p>
-                <p>Pris: 2299 kr</p>
-                <a href="checkout.html" class="btn">Legg i handlekurv</a>
+        <!-- Produkter Seksjon -->
+        <section class="product-section">
+            <h2>Våre produkter</h2>
+            <div class="product-grid">
+                <!-- Produkt 1 -->
+                <article class="product-item">
+                    <img src="https://picsum.photos/200/300" alt="Nike Fotballsko">
+                    <div>
+                        <h3>Nike Fotballsko</h3>
+                        <p>Komfortable fotballsko for alle underlag.</p>
+                        <p>Pris: <span class="price">2299 kr</span></p>
+                        <a href="checkout.html" class="btn">Legg i handlekurv</a>
+                    </div>
+                </article>
 
-            </div>
+                <!-- Produkt 2 -->
+                <article class="product-item">
+                    <img src="https://picsum.photos/200/300" alt="Adidas Fotballsko">
+                    <div>
+                        <h3>Adidas Fotballsko</h3>
+                        <p>Limited edition, kun tilgjengelig i en kort periode.</p>
+                        <p>Pris: <span class="price">1999 kr</span></p>
+                        <a href="checkout.html" class="btn">Legg i handlekurv</a>
+                    </div>
+                </article>
 
-            <!-- Produkt 2 -->
-            <div class="product-item">
-                <img src="https://picsum.photos/200/300" alt="Spesial Produkt">
-                <h3>Spesial Produkt</h3>
-                <p>Limited edition, kun tilgjengelig i en kort periode.</p>
-                <p>Pris: 999 kr</p>
-                <a href="checkout.html" class="btn">Legg i handlekurv</a>
+                <!-- Produkt 3 -->
+                <article class="product-item">
+                    <img src="https://picsum.photos/200/300" alt="Puma Fotballsko">
+                    <div>
+                        <h3>Puma Fotballsko</h3>
+                        <p>Perfekt for kunstgress og gressbaner.</p>
+                        <p>Pris: <span class="price">1899 kr</span></p>
+                        <a href="checkout.html" class="btn">Legg i handlekurv</a>
+                    </div>
+                </article>
 
-            </div>
-
-            <!-- Produkt 3 -->
-            <div class="product-item">
-                <img src="https://picsum.photos/200/300" alt="Fotballutstyr">
-                <h3>Fotballutstyr</h3>
-                <p>Alt du trenger for en komplett fotballopplevelse.</p>
-                <p>Pris: 1499 kr</p>
-                <a href="checkout.html" class="btn">Legg i handlekurv</a>
-
+                <!-- Produkt 4 -->
+                <article class="product-item">
+                    <img src="https://picsum.photos/200/300" alt="Umbro Fotballsko">
+                    <div>
+                        <h3>Umbro Fotballsko</h3>
+                        <p>Klassisk design for stabilitet og komfort.</p>
+                        <p>Pris: <span class="price">1599 kr</span></p>
+                        <a href="checkout.html" class="btn">Legg i handlekurv</a>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
 
-    
+    <!-- Footer -->
     <footer>
-            
-            <section class="contact-info">
-                <h4>Kontakt oss</h4>
-                <p>E-post: kontakt@nettbutikk.no</p>
-                <p>Telefon: 123 45 678</p>
-            </section>
-            <section class="quick-links">
-                <h4>Snarveier</h4>
-                <ul>
-                    <li><a href="index.html">Hjem</a></li>
-                    <li><a href="product.html">Produkter</a></li>
-                    <li><a href="checkout.html">Handlekurv</a></li>
-                </ul>
-            </section>
-            <section class="social-media">
-                <h4>Følg oss</h4>
-                <a href="https://www.facebook.com">Facebook</a>
-                <a href="https://www.instagram.com">Instagram</a>
-            </section>
-            <p>© 2024 Nettbutikk. Alle rettigheter reservert.</p>
+        <section id="kontakt">
+            <h4>Kontakt oss</h4>
+            <p>E-post: kontakt@nettbutikk.no</p>
+            <p>Telefon: 123 45 678</p>
+        </section>
+        <section class="quick-links">
+            <h4>Snarveier</h4>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="product.html">Produkter</a></li>
+                <li><a href="checkout.html">Handlekurv</a></li>
+            </ul>
+        </section>
+        <section class="social-media">
+            <h4>Følg oss</h4>
+            <ul>
+                <li><a href="https://www.facebook.com">Facebook</a></li>
+                <li><a href="https://www.instagram.com">Instagram</a></li>
+                <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+            </ul>
+        </section>
+        <p>© 2024 Nettbutikk. Alle rettigheter reservert.</p>
     </footer>
 </body>
 </html>
