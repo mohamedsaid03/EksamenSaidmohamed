@@ -8,21 +8,28 @@
     
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <nav>
-            <ul>
+        <nav class="header-nav" aria-label="Hovedmeny">
+            <ul class="menu">
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="product.html">Produkter</a></li>
-                <li><a href="checkout.html">Handlekurv</a></li>
-                <li><a href="#categories">Kategorier</a></li>
+                <li><a href="#kategorier">Kategorier</a></li>
                 <li><a href="#kontakt">Kontakt oss</a></li>
-                <li><a href="checkout.html">
-                    <img src="https://picsum.photos/50/50" alt="Handlekurvikon" class="cart-icon">
-                </a></li>
             </ul>
+            <a href="index.html" class="logo" aria-label="Logo">Logo</a>
+            <div class="cart-container">
+                <a href="checkout.html" class="cart-icon" aria-label="Handlekurv">
+                    <img src="https://picsum.photos/40/40" alt="Handlekurvikon">
+                    <span class="cart-count">3</span>
+                </a>
+            </div>
         </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Søk etter produkter..." class="search-input" aria-label="Søkefelt">
+            <button type="submit" class="search-btn" aria-label="Søk">Søk</button>
+        </div>
     </header>
+    
 
     <!-- Brødsmulesti -->
     <nav aria-label="Brødsmulesti" class="breadcrumb-container">
@@ -101,6 +108,7 @@
                 <li><a href="checkout.html">Handlekurv</a></li>
             </ul>
         </section>
+        
         <section class="social-media">
             <h4>Følg oss</h4>
             <ul>

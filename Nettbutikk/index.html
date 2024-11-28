@@ -5,105 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nettbutikk – Forside</title>
     <link rel="stylesheet" href="css/style.css">
-    
 </head>
 <body>
     <!-- Header -->
     <header>
-        <nav role="navigation">
-            <ul>
+        <nav class="header-nav" aria-label="Hovedmeny">
+            <ul class="menu">
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="product.html">Produkter</a></li>
                 <li><a href="#kategorier">Kategorier</a></li>
                 <li><a href="#kontakt">Kontakt oss</a></li>
-                <li><a href="checkout.html">
-                    <img src="https://picsum.photos/50/50" alt="Handlekurvikon">
-                </a></li>
             </ul>
+            <a href="index.html" class="logo" aria-label="Logo">Logo</a>
+            <div class="cart-container">
+                <a href="checkout.html" class="cart-icon" aria-label="Handlekurv">
+                    <img src="https://picsum.photos/40/40" alt="Handlekurvikon">
+                    <span class="cart-count">3</span>
+                </a>
+            </div>
         </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Søk etter produkter..." class="search-input" aria-label="Søkefelt">
+            <button type="submit" class="search-btn" aria-label="Søk">Søk</button>
+        </div>
     </header>
 
     <!-- Main Content -->
-    <main>
+    <main id="main-content">
         <!-- Banner Section -->
         <section id="banner" class="banner">
-            <div>
-                <h1>Velkommen til vår nettbutikk!</h1>
-                <p>Finn alt du trenger for fotballopplevelsen din.</p>
-                <a href="#produkter" class="btn">Utforsk Produkter</a>
+            <div class="slider">
+                <div class="slide">
+                    <h1>Velkommen til vår nettbutikk!</h1>
+                    <p>Finn alt du trenger for fotballopplevelsen din.</p>
+                    <a href="#produkter" class="btn">Utforsk Produkter</a>
+                </div>
+                <div class="slide">
+                    <h1>Eksklusive tilbud!</h1>
+                    <p>Utforsk våre kampanjer i dag.</p>
+                    <a href="#kategorier" class="btn">Se mer</a>
+                </div>
             </div>
         </section>
 
-        <!-- Produkter Section -->
-        <section id="produkter">
+        <!-- Våre mest populære produkter -->
+        <section id="produkter" class="product-section">
             <h2>Våre mest populære produkter</h2>
             <div class="product-grid">
-                <!-- Produkt 1 -->
                 <article class="product-card">
                     <img src="https://picsum.photos/200/300" alt="Nike fotballsko">
                     <h3>Nike Fotballsko</h3>
                     <p>Pris: 2299 kr</p>
+                    <p>⭐ 4.5 (120 anmeldelser)</p>
                     <a href="checkout.html" class="btn">Kjøp nå</a>
                 </article>
-
-                <!-- Produkt 2 -->
                 <article class="product-card">
                     <img src="https://picsum.photos/200/300" alt="Adidas fotballsko">
                     <h3>Adidas Fotballsko</h3>
                     <p>Pris: 1999 kr</p>
+                    <p>⭐ 4.3 (90 anmeldelser)</p>
                     <a href="checkout.html" class="btn">Kjøp nå</a>
                 </article>
-
-                <!-- Produkt 3 -->
                 <article class="product-card">
                     <img src="https://picsum.photos/200/300" alt="Puma fotballsko">
                     <h3>Puma Fotballsko</h3>
                     <p>Pris: 1899 kr</p>
+                    <p>⭐ 4.6 (75 anmeldelser)</p>
                     <a href="checkout.html" class="btn">Kjøp nå</a>
                 </article>
-
-                <!-- Produkt 4 -->
                 <article class="product-card">
                     <img src="https://picsum.photos/200/300" alt="Umbro fotballsko">
                     <h3>Umbro Fotballsko</h3>
                     <p>Pris: 1599 kr</p>
+                    <p>⭐ 4.0 (60 anmeldelser)</p>
                     <a href="checkout.html" class="btn">Kjøp nå</a>
                 </article>
             </div>
         </section>
 
-        <!-- Kategorier Section -->
-        <section id="kategorier">
+        <!-- Våre mest populære kategorier -->
+        <section id="kategorier" class="category-section">
             <h2>Våre mest populære kategorier</h2>
             <div class="category-grid">
-                <article>
+                <article class="category-card">
                     <h3>Fotballsko</h3>
                 </article>
-                <article>
+                <article class="category-card">
                     <h3>Keeperutstyr</h3>
                 </article>
-                <article>
+                <article class="category-card">
                     <h3>Treningsklær</h3>
                 </article>
-                <article>
+                <article class="category-card">
                     <h3>Tilbehør</h3>
                 </article>
             </div>
         </section>
+       
 
         <!-- Kontaktseksjonen -->
         <section id="kontakt">
             <h2>Kontakt oss</h2>
-            <form>
+            <form aria-label="Kontaktskjema">
                 <label for="navn">Navn:</label>
                 <input type="text" id="navn" name="navn" required>
-        
                 <label for="epost">E-post:</label>
                 <input type="email" id="epost" name="epost" required>
-        
                 <label for="melding">Melding:</label>
                 <textarea id="melding" name="melding" rows="5" required></textarea>
-        
                 <button type="submit" class="btn">Send</button>
             </form>
         </section>
@@ -129,4 +138,13 @@
         </section>
     </footer>
 </body>
+<script>
+    // JavaScript for slider
+    let index = 0;
+    const slides = document.querySelectorAll('.slide');
+    setInterval(() => {
+        index = (index + 1) % slides.length;
+        slides.forEach(slide => slide.style.transform = `translateX(-${index * 100}%)`);
+    }, 5000);
+</script>
 </html>

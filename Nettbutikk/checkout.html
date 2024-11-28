@@ -7,59 +7,76 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
         <nav>
-            <a href="index.html">Hjem</a>
-            <a href="product.html">Produkter</a>
-            <a href="#categories">Kategorier</a>
-            <a href="#contact">Kontakt oss</a>
-            <img src="https://picsum.photos/50/50" alt="Handlekurv" class="cart-icon">
+            <ul class="menu">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="product.html">Produkter</a></li>
+                <li><a href="#kontakt">Kontakt oss</a></li>
+                <li><a href="checkout.html"><img src="https://picsum.photos/50/50" alt="Handlekurv" class="cart-icon"></a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Hovedinnhold -->
     <main>
-        <h2>Din handlekurv</h2>
+        <h1>Kasse</h1>
 
-        <!-- Handlekurvseksjon -->
-        <section class="cart-items" aria-label="Handlekurv varer">
-            <!-- Produkt 1 -->
-            <article class="cart-item">
-                <img src="https://picsum.photos/200/300" alt="Nike Fotballsko">
-                <h3>Nike Fotballsko</h3>
-                <p>Antall: 1</p>
-                <p>Pris: 2299 kr</p>
-                <button class="btn remove-btn" aria-label="Fjern Nike Fotballsko">Fjern</button>
-            </article>
-
-            <!-- Produkt 2 -->
-            <article class="cart-item">
-                <img src="https://picsum.photos/200/300" alt="Spesial Produkt">
-                <h3>Spesial Produkt</h3>
-                <p>Antall: 2</p>
-                <p>Pris: 1998 kr</p>
-                <button class="btn remove-btn" aria-label="Fjern Spesial Produkt">Fjern</button>
-            </article>
-
-            <!-- Produkt 3 -->
-            <article class="cart-item">
-                <img src="https://picsum.photos/200/300" alt="Fotballutstyr">
-                <h3>Fotballutstyr</h3>
-                <p>Antall: 1</p>
-                <p>Pris: 1499 kr</p>
-                <button class="btn remove-btn" aria-label="Fjern Fotballutstyr">Fjern</button>
-            </article>
+        <!-- Levering -->
+        <section class="delivery">
+            <h2>3. Leveringsvalg</h2>
+            <form>
+                <label>
+                    <input type="radio" name="delivery" value="express-home">
+                    <span>Express Hjemlevering</span>
+                    <small>3–4 Virkedager</small>
+                </label>
+                <label>
+                    <input type="radio" name="delivery" value="express-pickup">
+                    <span>Ekspress Pakke til utleveringssted</span>
+                    <small>1–3 Virkedager</small>
+                </label>
+                <label>
+                    <input type="radio" name="delivery" value="standard-home">
+                    <span>Standard Hjemlevering</span>
+                    <small>5–8 Virkedager</small>
+                </label>
+            </form>
         </section>
 
-        <!-- Oppsummering -->
-        <section class="checkout-summary" aria-label="Kjøpsoppsummering">
-            <h3>Total: 5796 kr</h3>
-            <button class="btn checkout-btn" aria-label="Fullfør kjøp">Fullfør Kjøp</button>
+        <!-- Betaling -->
+        <section class="payment">
+            <h2>4. Betaling</h2>
+            <form>
+                <div class="form-group">
+                    <label for="card-number">Kortnummer</label>
+                    <input type="text" id="card-number" placeholder="•••• •••• •••• ••••">
+                </div>
+                <div class="form-group">
+                    <label for="expiry-date">Utløpsdato</label>
+                    <input type="text" id="expiry-date" placeholder="mm/åå">
+                </div>
+                <div class="form-group">
+                    <label for="cvc">CVC/CVV</label>
+                    <input type="text" id="cvc" placeholder="CVC/CVV">
+                </div>
+                <h3>Å betale inkl. mva.</h3>
+                <p class="total-price">1 199 kr</p>
+                <button type="submit" class="btn checkout-btn">Fullfør kjøp</button>
+            </form>
+            <small class="terms">
+                Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige.
+                Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger
+                uriktige eller ufullstendige opplysninger.
+            </small>
+            <label>
+                <input type="checkbox"> Ja takk! Send nyhetsbrev til meg.
+            </label>
+            <label>
+                <input type="checkbox"> Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
+            </label>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
         <p>© 2024 Nettbutikk. Alle rettigheter reservert.</p>
     </footer>
