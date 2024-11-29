@@ -23,13 +23,8 @@
                 </a>
             </div>
         </nav>
-        <div class="search-container">
-            <input type="text" placeholder="Søk etter produkter..." class="search-input" aria-label="Søkefelt">
-            <button type="submit" class="search-btn" aria-label="Søk">Søk</button>
-        </div>
     </header>
 
-    
     <nav class="breadcrumb" aria-label="Brødsmulesti">
         <ul>
             <li><a href="index.html">Hjem</a></li>
@@ -38,65 +33,65 @@
         </ul>
     </nav>
 
-    
     <main>
         <!-- Produktinformasjon -->
         <section class="product-info">
-            <div class="product-images">
+            <figure>
                 <img src="https://picsum.photos/400/400" alt="Stort produktbilde" class="main-image">
-                <div class="thumbnail-gallery">
-                    <img src="https://picsum.photos/100/100" alt="Bilde 1">
-                    <img src="https://picsum.photos/100/100" alt="Bilde 2">
-                    <img src="https://picsum.photos/100/100" alt="Bilde 3">
-                </div>
-            </div>
-            <div class="product-details">
+                <figcaption>
+                    <ul class="thumbnail-gallery">
+                        <li><img src="https://picsum.photos/100/100" alt="Bilde 1"></li>
+                        <li><img src="https://picsum.photos/100/100" alt="Bilde 2"></li>
+                        <li><img src="https://picsum.photos/100/100" alt="Bilde 3"></li>
+                    </ul>
+                </figcaption>
+            </figure>
+            <article class="product-details">
                 <h1>Nike Fotballsko</h1>
                 <p>Merke: <a href="#">Nike</a></p>
                 <p>Pris: <span class="price">2299 kr</span></p>
                 <p>Farge: Sort</p>
                 <p>Beskrivelse: Komfortable fotballsko for alle underlag.</p>
                 <button class="btn">Legg i handlekurv</button>
-            </div>
+            </article>
         </section>
 
+        <!-- Relaterte produkter -->
         <aside class="related-products">
             <h2>Relaterte produkter</h2>
-            <div class="product-grid">
-                <!-- Gjenbruk av produktkort -->
-                <article class="product-item">
+            <ul class="product-grid">
+                <li>
                     <a href="product.html">
                         <img src="https://picsum.photos/200/300" alt="Relatert produkt 1">
                         <h3>Adidas Fotballsko</h3>
                     </a>
                     <p>Pris: <span class="price">1999 kr</span></p>
-                </article>
-                <article class="product-item">
+                </li>
+                <li>
                     <a href="product.html">
                         <img src="https://picsum.photos/200/300" alt="Relatert produkt 2">
                         <h3>Puma Fotballsko</h3>
                     </a>
                     <p>Pris: <span class="price">1899 kr</span></p>
-                </article>
-                <article class="product-item">
+                </li>
+                <li>
                     <a href="product.html">
                         <img src="https://picsum.photos/200/300" alt="Relatert produkt 3">
                         <h3>Umbro Fotballsko</h3>
                     </a>
                     <p>Pris: <span class="price">1599 kr</span></p>
-                </article>
-                <article class="product-item">
+                </li>
+                <li>
                     <a href="product.html">
                         <img src="https://picsum.photos/200/300" alt="Relatert produkt 4">
                         <h3>Reebok Fotballsko</h3>
                     </a>
                     <p>Pris: <span class="price">1799 kr</span></p>
-                </article>
-            </div>
+                </li>
+            </ul>
         </aside>
     </main>
 
-   
     <footer>
         <section id="kontakt">
             <h4>Kontakt oss</h4>
@@ -111,7 +106,6 @@
                 <li><a href="checkout.html">Handlekurv</a></li>
             </ul>
         </section>
-        
         <section class="social-media">
             <h4>Følg oss</h4>
             <ul>
