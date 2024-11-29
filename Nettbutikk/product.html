@@ -11,9 +11,9 @@
         <nav class="header-nav" aria-label="Hovedmeny">
             <ul class="menu">
                 <li><a href="index.html">Hjem</a></li>
-                <li><a href="index.html#produkter">Produkter</a></li> <!-- Oppdatert lenke -->
-                <li><a href="index.html#kategorier">Kategorier</a></li> <!-- Oppdatert lenke -->
-                <li><a href="index.html#kontakt">Kontakt oss</a></li> <!-- Oppdatert lenke -->
+                <li><a href="index.html#produkter">Produkter</a></li>
+                <li><a href="index.html#kategorier">Kategorier</a></li>
+                <li><a href="index.html#kontakt">Kontakt oss</a></li>
             </ul>
             <a href="index.html" class="logo" aria-label="Logo">Logo</a>
             <div class="cart-container">
@@ -29,57 +29,72 @@
         </div>
     </header>
 
+    <!-- Brødsmulesti -->
+    <nav class="breadcrumb" aria-label="Brødsmulesti">
+        <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="index.html#kategorier">Kategori</a></li>
+            <li>Produkter</li>
+        </ul>
+    </nav>
+
     <!-- Hovedinnhold -->
     <main>
-        <!-- Produkter Seksjon -->
-        <section class="product-section">
-            <h2>Fotball produkter</h2>
-            <div class="product-grid">
-                <!-- Produkt 1 -->
-                <article class="product-item">
-                    <a href="product.html">
-                        <img src="https://picsum.photos/200/300" alt="Nike Fotballsko">
-                        <h3>Nike Fotballsko</h3>
-                    </a>
-                    <p>Komfortable fotballsko for alle underlag.</p>
-                    <p>Pris: <span class="price">2299 kr</span></p>
-                    <a href="checkout.html" class="btn">Legg i handlekurv</a>
-                </article>
-
-                <!-- Produkt 2 -->
-                <article class="product-item">
-                    <a href="product.html">
-                        <img src="https://picsum.photos/200/300" alt="Adidas Fotballsko">
-                        <h3>Adidas Fotballsko</h3>
-                    </a>
-                    <p>Limited edition, kun tilgjengelig i en kort periode.</p>
-                    <p>Pris: <span class="price">1999 kr</span></p>
-                    <a href="checkout.html" class="btn">Legg i handlekurv</a>
-                </article>
-
-                <!-- Produkt 3 -->
-                <article class="product-item">
-                    <a href="product.html">
-                        <img src="https://picsum.photos/200/300" alt="Puma Fotballsko">
-                        <h3>Puma Fotballsko</h3>
-                    </a>
-                    <p>Perfekt for kunstgress og gressbaner.</p>
-                    <p>Pris: <span class="price">1899 kr</span></p>
-                    <a href="checkout.html" class="btn">Legg i handlekurv</a>
-                </article>
-
-                <!-- Produkt 4 -->
-                <article class="product-item">
-                    <a href="product.html">
-                        <img src="https://picsum.photos/200/300" alt="Umbro Fotballsko">
-                        <h3>Umbro Fotballsko</h3>
-                    </a>
-                    <p>Klassisk design for stabilitet og komfort.</p>
-                    <p>Pris: <span class="price">1599 kr</span></p>
-                    <a href="checkout.html" class="btn">Legg i handlekurv</a>
-                </article>
+        <!-- Produktinformasjon -->
+        <section class="product-info">
+            <div class="product-images">
+                <img src="https://picsum.photos/400/400" alt="Stort produktbilde" class="main-image">
+                <div class="thumbnail-gallery">
+                    <img src="https://picsum.photos/100/100" alt="Bilde 1">
+                    <img src="https://picsum.photos/100/100" alt="Bilde 2">
+                    <img src="https://picsum.photos/100/100" alt="Bilde 3">
+                </div>
+            </div>
+            <div class="product-details">
+                <h1>Nike Fotballsko</h1>
+                <p>Merke: <a href="#">Nike</a></p>
+                <p>Pris: <span class="price">2299 kr</span></p>
+                <p>Farge: Sort</p>
+                <p>Beskrivelse: Komfortable fotballsko for alle underlag.</p>
+                <button class="btn">Legg i handlekurv</button>
             </div>
         </section>
+
+        <!-- Relaterte produkter -->
+        <aside class="related-products">
+            <h2>Relaterte produkter</h2>
+            <div class="product-grid">
+                <!-- Gjenbruk av produktkort -->
+                <article class="product-item">
+                    <a href="product.html">
+                        <img src="https://picsum.photos/200/300" alt="Relatert produkt 1">
+                        <h3>Adidas Fotballsko</h3>
+                    </a>
+                    <p>Pris: <span class="price">1999 kr</span></p>
+                </article>
+                <article class="product-item">
+                    <a href="product.html">
+                        <img src="https://picsum.photos/200/300" alt="Relatert produkt 2">
+                        <h3>Puma Fotballsko</h3>
+                    </a>
+                    <p>Pris: <span class="price">1899 kr</span></p>
+                </article>
+                <article class="product-item">
+                    <a href="product.html">
+                        <img src="https://picsum.photos/200/300" alt="Relatert produkt 3">
+                        <h3>Umbro Fotballsko</h3>
+                    </a>
+                    <p>Pris: <span class="price">1599 kr</span></p>
+                </article>
+                <article class="product-item">
+                    <a href="product.html">
+                        <img src="https://picsum.photos/200/300" alt="Relatert produkt 4">
+                        <h3>Reebok Fotballsko</h3>
+                    </a>
+                    <p>Pris: <span class="price">1799 kr</span></p>
+                </article>
+            </div>
+        </aside>
     </main>
 
     <!-- Footer -->
@@ -93,7 +108,7 @@
             <h4>Snarveier</h4>
             <ul>
                 <li><a href="index.html">Hjem</a></li>
-                <li><a href="index.html#produkter">Produkter</a></li> <!-- Oppdatert lenke -->
+                <li><a href="index.html#produkter">Produkter</a></li>
                 <li><a href="checkout.html">Handlekurv</a></li>
             </ul>
         </section>
