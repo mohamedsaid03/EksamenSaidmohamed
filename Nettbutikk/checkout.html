@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
     <header>
         <nav class="header-nav">
             <ul class="menu">
                 <li><a href="index.html">Hjem</a></li>
-                <li><a href="index.html#produkter">Produkter</a></li> 
-                <li><a href="index.html#kontakt">Kontakt oss</a></li> 
+                <li><a href="index.html#produkter">Produkter</a></li>
+                <li><a href="index.html#kontakt">Kontakt oss</a></li>
                 <li>
                     <a href="checkout.html">
                         <img src="https://picsum.photos/40/40" alt="Handlekurv" class="cart-icon">
@@ -22,48 +21,47 @@
             </ul>
             <a href="index.html" class="logo" aria-label="Logo">Logo</a>
         </nav>
-        <div class="search-container">
+        <form class="search-container">
             <input type="text" placeholder="Søk etter produkter..." class="search-input">
             <button type="submit" class="search-btn">Søk</button>
-        </div>
+        </form>
     </header>
 
-    
     <main>
         <h1>Kassen</h1>
 
-        
+        <!-- Handlekurv -->
         <section class="cart-section">
             <h2>1. Handlekurv</h2>
-            <div class="cart-items">
-                <div class="cart-item">
+            <ul>
+                <li>
                     <a href="product.html">
                         <img src="https://picsum.photos/100" alt="Nike Fotballsko">
                     </a>
-                    <div>
+                    <article>
                         <h3><a href="product.html">Nike Fotballsko</a></h3>
                         <p>Antall: 1</p>
                         <p>Pris: 2299 kr</p>
-                    </div>
+                    </article>
                     <button class="btn remove-btn">Fjern</button>
-                </div>
-                <div class="cart-item">
+                </li>
+                <li>
                     <a href="product.html">
                         <img src="https://picsum.photos/100" alt="Adidas Fotballsko">
                     </a>
-                    <div>
+                    <article>
                         <h3><a href="product.html">Adidas Fotballsko</a></h3>
                         <p>Antall: 2</p>
                         <p>Pris: 1999 kr</p>
-                    </div>
+                    </article>
                     <button class="btn remove-btn">Fjern</button>
-                </div>
-            </div>
+                </li>
+            </ul>
             <h3>Subtotal: 6297 kr</h3>
         </section>
 
-        
-        <section class="personal-info-section">
+        <!-- Personopplysninger -->
+        <section>
             <h2>2. Personopplysninger</h2>
             <form>
                 <label for="first-name">Fornavn</label>
@@ -79,8 +77,8 @@
             </form>
         </section>
 
-        
-        <section class="delivery">
+        <!-- Leveringsvalg -->
+        <section>
             <h2>3. Leveringsvalg</h2>
             <form>
                 <label>
@@ -98,8 +96,8 @@
             </form>
         </section>
 
-        
-        <section class="payment">
+        <!-- Betaling -->
+        <section>
             <h2>4. Betaling</h2>
             <form>
                 <label for="card-number">Kortnummer</label>
@@ -111,7 +109,7 @@
                 <h3>Totalt: 6297 kr</h3>
                 <button type="submit" class="btn checkout-btn">Fullfør kjøp</button>
             </form>
-            <small class="terms">
+            <small>
                 Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige.
                 Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger
                 uriktige eller ufullstendige opplysninger.
@@ -125,14 +123,13 @@
         </section>
     </main>
 
-   
     <footer>
         <section id="kontakt">
             <h4>Kontakt oss</h4>
             <p>E-post: fotball@nettbutikk.no</p>
             <p>Telefon: 929 72 278</p>
         </section>
-        <section class="quick-links">
+        <section>
             <h4>Snarveier</h4>
             <ul>
                 <li><a href="index.html">Hjem</a></li>
@@ -140,7 +137,7 @@
                 <li><a href="checkout.html">Handlekurv</a></li>
             </ul>
         </section>
-        <section class="social-media">
+        <section>
             <h4>Følg oss</h4>
             <ul>
                 <li><a href="https://www.facebook.com">Facebook</a></li>

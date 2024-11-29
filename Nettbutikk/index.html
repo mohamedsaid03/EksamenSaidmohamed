@@ -5,48 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nettbutikk – Forside</title>
     <link rel="stylesheet" href="css/style.css">
-    
 </head>
 <body>
-    
     <header>
         <nav class="header-nav">
             <ul class="menu">
                 <li><a href="index.html">Hjem</a></li>
-                <li><a href="#produkter">Produkter</a></li> <!-- Oppdatert -->
+                <li><a href="#produkter">Produkter</a></li>
                 <li><a href="#kategorier">Kategorier</a></li>
                 <li><a href="#kontakt">Kontakt oss</a></li>
             </ul>
             <a href="index.html" class="logo">Logo</a>
-            <div class="cart-container">
-                <a href="checkout.html" class="cart-icon">
-                    <img src="https://picsum.photos/40/40" alt="Handlekurvikon">
-                    <span class="cart-count">3</span>
-                </a>
-            </div>
+            <a href="checkout.html" class="cart-icon">
+                <img src="https://picsum.photos/40/40" alt="Handlekurvikon">
+                <span class="cart-count">3</span>
+            </a>
         </nav>
-        <div class="search-container">
+        <form class="search-container">
             <input type="text" placeholder="Søk etter produkter..." class="search-input">
             <button type="submit" class="search-btn">Søk</button>
-        </div>
+        </form>
     </header>
 
-    
-    <main id="main-content">
-
-        <section id="banner" class="banner">
-            <div class="banner-content">
-                <h1>Velkommen til vår Fotballbutikk</h1>
-                <p>Finn alt du trenger for fotballopplevelsen din.</p>
-                <a href="#produkter" class="btn">Utforsk Produkter</a>
-            </div>
+    <main>
+        <section id="banner">
+            <h1>Velkommen til vår Fotballbutikk</h1>
+            <p>Finn alt du trenger for fotballopplevelsen din.</p>
+            <a href="#produkter" class="btn">Utforsk Produkter</a>
         </section>
 
-        
         <section id="produkter">
             <h2>Våre mest populære fotball produkter</h2>
-            <div class="product-grid">
-                <article class="product-card">
+            <ul class="product-grid">
+                <li class="product-card">
                     <a href="product.html">
                         <img src="https://picsum.photos/200/300" alt="Nike fotballsko">
                         <h3>Nike Fotballsko</h3>
@@ -54,8 +45,8 @@
                     <p>Pris: 2299 kr</p>
                     <p>8/10 (120 anmeldelser)</p>
                     <a href="checkout.html" class="btn">Kjøp nå</a>
-                </article>
-                <article class="product-card">
+                </li>
+                <li class="product-card">
                     <a href="product.html">
                         <img src="https://picsum.photos/200/300" alt="Adidas fotballsko">
                         <h3>Adidas Fotballsko</h3>
@@ -63,8 +54,8 @@
                     <p>Pris: 1999 kr</p>
                     <p>10/10 (90 anmeldelser)</p>
                     <a href="checkout.html" class="btn">Kjøp nå</a>
-                </article>
-                <article class="product-card">
+                </li>
+                <li class="product-card">
                     <a href="product.html">
                         <img src="https://picsum.photos/200/300" alt="Puma fotballsko">
                         <h3>Puma Fotballsko</h3>
@@ -72,8 +63,8 @@
                     <p>Pris: 1899 kr</p>
                     <p>9/10 (75 anmeldelser)</p>
                     <a href="checkout.html" class="btn">Kjøp nå</a>
-                </article>
-                <article class="product-card">
+                </li>
+                <li class="product-card">
                     <a href="product.html">
                         <img src="https://picsum.photos/200/300" alt="Umbro fotballsko">
                         <h3>Umbro Fotballsko</h3>
@@ -81,51 +72,40 @@
                     <p>Pris: 1599 kr</p>
                     <p>10/10 (60 anmeldelser)</p>
                     <a href="checkout.html" class="btn">Kjøp nå</a>
-                </article>
-            </div>
+                </li>
+            </ul>
         </section>
 
-
-        <section id="kategorier" class="category-section">
+        <section id="kategorier">
             <h2>Våre mest populære kategorier</h2>
-            <div class="category-grid">
-                <article class="category-card">
-                    <h3>Fotballsko</h3>
-                </article>
-                <article class="category-card">
-                    <h3>Keeperutstyr</h3>
-                </article>
-                <article class="category-card">
-                    <h3>Treningsklær</h3>
-                </article>
-                <article class="category-card">
-                    <h3>Tilbehør</h3>
-                </article>
-            </div>
+            <ul class="category-grid">
+                <li>Fotballsko</li>
+                <li>Keeperutstyr</li>
+                <li>Treningsklær</li>
+                <li>Tilbehør</li>
+            </ul>
         </section>
 
-        
-        <section id="anmeldelser" class="review-section">
+        <section id="anmeldelser">
             <h2>Hva våre kunder sier</h2>
-            <div class="review-grid">
-                <article class="review-card">
+            <ul class="review-grid">
+                <li class="review-card">
                     <img src="https://picsum.photos/100/100" alt="Kunde">
                     <h3>Perfekt produkt!</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </article>
-                <article class="review-card">
+                </li>
+                <li class="review-card">
                     <img src="https://picsum.photos/100/100" alt="Kunde">
                     <h3>Veldig fornøyd!</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </article>
-                <article class="review-card">
+                </li>
+                <li class="review-card">
                     <img src="https://picsum.photos/100/100" alt="Kunde">
                     <h3>Rask levering!</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </article>
-            </div>
+                </li>
+            </ul>
         </section>
-
 
         <section id="kontakt">
             <h2>Kontakt oss</h2>
@@ -141,24 +121,17 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <section>
-            <p>© 2024 Nettbutikk. Alle rettigheter reservert.</p>
-        </section>
-        <section>
-            <h4>Kontakt oss</h4>
+        <p>© 2024 Nettbutikk. Alle rettigheter reservert.</p>
+        <address>
             <p>Adresse: Dr.Gregertsens vei 1, 1678 Fredrikstad</p>
             <p>E-post: fotball@nettbutikk.no</p>
-        </section>
-        <section>
-            <h4>Sosiale medier</h4>
-            <ul>
-                <li><a href="https://facebook.com">Facebook</a></li>
-                <li><a href="https://instagram.com">Instagram</a></li>
-                <li><a href="https://linkedin.com">LinkedIn</a></li>
-            </ul>
-        </section>
+        </address>
+        <ul>
+            <li><a href="https://facebook.com">Facebook</a></li>
+            <li><a href="https://instagram.com">Instagram</a></li>
+            <li><a href="https://linkedin.com">LinkedIn</a></li>
+        </ul>
     </footer>
 </body>
 </html>
